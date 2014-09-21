@@ -1,5 +1,9 @@
 .iml
 .class
 .idea
+.idea/*
 .hg
+.hg/*
+out/
 target/
+project/
