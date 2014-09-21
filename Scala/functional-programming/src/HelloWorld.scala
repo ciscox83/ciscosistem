@@ -1,7 +1,7 @@
 /**
  * Created by christian.sisti on 07/12/2013.
  */
-class HelloWorld {
+object HelloWorld {
   def main(args: Array[String]) {
     val x = "Hello"
     val y = "World!"

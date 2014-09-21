@@ -1,14 +1,12 @@
 package coursera.fpp.week1
 
-import coursera.fpp.Utilities._
-
 /**
  * Created by christian.sisti on 07/12/2013.
  */
 object NewtonSqrt {
   def main(args: Array[String]) {
     val x = 1e50
-    time {println("Square root of : " + x + " = " + sqrt(x))}
+    coursera.fpp.Utilities.time {println("Square root of : " + x + " = " + sqrt(x))}
   }
 
   /** Only sqrt is visible, this prevent also namespace pollution.
