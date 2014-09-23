@@ -15,7 +15,6 @@ object HigherOrderFunctions {
     println(Anonymous.sumInts(1, 2))
     println(Anonymous.sumCubes(1, 2))
   }
-  }
 
   // Classic approach
   object Classic {
@@ -23,6 +22,7 @@ object HigherOrderFunctions {
       if (a > b) 0
       else a + sumInts(a + 1, b)
     }
+
     def sumCubes(a: Int, b: Int): Int = {
       def cube(x: Int) = x * x * x // First Order Function
       if (a > b) 0
@@ -36,9 +36,13 @@ object HigherOrderFunctions {
       if (a > b) 0
       else f(a) + sum(f, a + 1, b)
     }
+
     def id(x: Int) = x
+
     def cube(x: Int) = x * x * x
+
     def sumInts(a: Int, b: Int) = sum(id, a, b)
+
     def sumCubes(a: Int, b: Int) = sum(cube, a, b)
   }
 
@@ -48,6 +52,9 @@ object HigherOrderFunctions {
       if (a > b) 0
       else f(a) + sum(f, a + 1, b)
     }
+
     def sumInts(a: Int, b: Int) = sum(x => x, a, b)
+
     def sumCubes(a: Int, b: Int) = sum(x => x * x * x, a, b)
   }
+}
